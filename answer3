@@ -1,0 +1,10 @@
+let result = ()  =>  
+    {   
+        let n = array.length;
+        let sum = 0; 
+        for (let item of array) 
+            sum += (2 * item) * (2 * item); 
+        return sum; 
+    } 
+ result();
+

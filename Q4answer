@@ -1,0 +1,10 @@
+ let promise = new Promise((resolve, reject) => {
+        let a = 10;
+        let b = 20;
+        let sum = a+b;
+        if(sum > 50) resolve();
+        reject();
+    });
+
+promise.then(() => new Promise(resolve => setTimeout(resolve, 3000)))
+.catch(() => console.log('inside catch block'));

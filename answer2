@@ -1,0 +1,24 @@
+let evenNumbersArray = array.filter(num => num %2 == 0);
+
+
+ let square  =>  
+    {   
+        let n = array.length;
+        let sum = 0; 
+        for (let item of array) 
+            sum += (2 * item) * (2 * item); 
+        return sum; 
+    } 
+
+let promise = new Promise((resolve, reject) => {
+    if(array.filter(num => num %2 == 0)){
+        resolve();
+    }
+    reject();
+});
+
+  promise.then(() => {
+       console.log(sum,'sum');
+    }).catch(() => {
+        console.log('catch block');
+    })

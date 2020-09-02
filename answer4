@@ -1,0 +1,5 @@
+let sumOfSquares = 0;
+for(let item of result){
+    sumOfSquares = item + sumOfSquares;
+}
+return sumOfSquares;
